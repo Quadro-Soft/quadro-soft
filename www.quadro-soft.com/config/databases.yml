@@ -8,14 +8,44 @@ test:
     param:
       classname:  DebugPDO
 
+#all:
+#  propel:
+#    class:        sfPropelDatabase
+#    param:
+#      classname:  PropelPDO
+#      dsn:        mysql:dbname=quadrosoft;host=localhost
+#      username:   root
+#      password:   
+#      encoding:   utf8
+#      persistent: true
+#      pooling:    true
+
 all:
   propel:
-    class:        sfPropelDatabase
+    class:        sfPropelDatabase 
     param:
       classname:  PropelPDO
       dsn:        mysql:dbname=quadrosoft;host=localhost
-      username:   root
-      password:   
+      #phptype:    mysql     # Database vendor
+      #hostspec:   localhost
+      database:   quadrosoft
+      username:   quser
+      password:   hArt2krtYB
+      #port:       80
+      encoding:   utf8
+      persistent: true
+      pooling:    true
+
+  session_storage:
+    class:        sfMySQLDatabase
+    param:
+      classname:  PropelPDO
+      phptype:    mysql     # Database vendor
+      hostspec:   localhost
+      database:   quadrosoft
+      username:   quser
+      password:   hArt2krtYB
+      #port:       80
       encoding:   utf8
       persistent: true
       pooling:    true

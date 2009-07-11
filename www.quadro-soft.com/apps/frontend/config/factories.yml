@@ -30,7 +30,30 @@ all:
     param:
       generate_shortest_url:            true
       extra_parameters_as_query_string: true
+  
+  
+  
+  storage:
+    class:                      sfMySQLSessionStorage
+    param:
+      database:                 session_storage
+      db_table:                 session_front
+      db_id_col:                sess_coo
+      db_data_col:              sess_data
+      db_time_col:              sess_time
+      session_name:             sf
+      session_cookie_lifetime:  0
+      #session_cookie_lifetime:  1800
+  
+  user:
+    class: myUser
+    param:
+      timeout:                   1800
 
+  routing:
+    param:
+      suffix:                    '.html'
+  
 #all:
 #  controller:
 #    class: sfFrontWebController

@@ -1,0 +1,144 @@
+propel: 
+  _attributes: 
+    defaultIdMethod: none
+    noXsd: false
+    package: lib.model.auth
+  
+  
+  session_front:
+    _attributes:
+      phpName: SessionFront
+    sess_coo:
+      type: CHAR
+      size: 32
+      required: true
+      primaryKey: true
+    sess_data:
+      type: LONGVARCHAR
+      required: true
+    sess_time:
+      #type: bu_date OR bu_timestamp
+      type: INTEGER
+      size: 11
+      required: true
+      default: 0
+#    max_lifetime: 
+#      type: INTEGER
+#      required: true
+#      default: 1440
+  
+  
+  session_back:
+    _attributes:
+      phpName: SessionBack
+    sess_coo:
+      type: CHAR
+      size: 32
+      required: true
+      primaryKey: true
+    sess_data:
+      type: LONGVARCHAR
+      required: true
+    sess_time:
+      #type: bu_date OR bu_timestamp
+      type: INTEGER
+      size: 11
+      required: true
+      default: 0
+#    max_lifetime: 
+#      type: INTEGER
+#      required: true
+#      default: 1440
+  
+  
+  account:
+    _attributes: 
+      phpName: Account
+      idMethod: native
+    id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    cid: 
+      type: VARCHAR
+      size: 64
+      required: true
+      index: unique
+    email:
+      type: VARCHAR
+      size: 64
+      required: true
+      index: unique
+    password:
+      type: VARCHAR
+      size: 64
+      required: true
+    first_name:
+      type: VARCHAR
+      size: 64
+    last_name:
+      type: VARCHAR
+      size: 64
+    coo_remember:
+      type: VARCHAR
+      size: 32
+    is_active:
+      type: TINYINT
+      size: 1
+      required: true
+      default: 0
+    is_deleted:
+      type: TINYINT
+      size: 1
+      required: true
+      default: 0
+    created_at: 
+    updated_at: 
+    modified_at: 
+      type: TIMESTAMP
+    deleted_at:
+      type: TIMESTAMP
+  
+  
+  credential:
+    _attributes: 
+      phpName: Credential
+    id:
+      type: INTEGER
+      required: true
+      primaryKey: true
+    cid: 
+      type: VARCHAR
+      size: 32
+      required: true
+      index: unique
+    title: 
+      type: VARCHAR
+      size: 64
+    description:
+      type: LONGVARCHAR
+  
+  
+  account2credential:
+    _attributes: 
+      phpName: Account2Credential
+    account_id:
+      type: INTEGER
+      foreignTable: account
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      required: true
+      primaryKey: true
+    credential_id:
+      type: INTEGER
+      foreignTable: credential
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      required: true
+      primaryKey: true
+  
+  
+  
