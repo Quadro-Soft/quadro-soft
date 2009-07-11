@@ -1,0 +1,25 @@
+
+mkdir /my/www/www.quadro-soft.com
+cd /my/www/www.quadro-soft.com
+
+mkdir lib
+mkdir lib/vendor
+
+cd lib/vendor
+
+wget http://www.symfony-project.org/get/symfony-1.2.7.tgz
+tar -xzvf ./symfony-1.2.7.tgz
+mv ./symfony-1.2.7.tgz ./symfony
+
+cd ../..
+
+php lib/vendor/symfony/data/bin/symfony generate:project quadrosoft
+
+./symfony generate:app --escaping-strategy=on --csrf-secret=UniqueSecret frontend
+./symfony generate:app --escaping-strategy=on --csrf-secret=UniqueSecret backend
+
+
+
+--- MYSQL ---
+GRANT ALL ON quadrosoft.* TO 'quser' IDENTIFIED BY 'hArt2krtYB' WITH GRANT OPTION;
+CREATE SCHEMA quadrosoft DEFAULT CHARACTER SET utf8;
