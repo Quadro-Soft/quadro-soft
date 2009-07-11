@@ -1,2 +1,3 @@
 #! /bin/sh
 
+svn up --username kotlyarov --password qhSIOx2B
