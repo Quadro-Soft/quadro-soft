@@ -4,17 +4,34 @@
 
 
 
+### Page Rules
+page_home:
+  url:   /index
+  param: { module: page, action: index }
+
+page_what-we-do:
+  url:   /what-we-do
+  param: { module: page, action: whatWeDo }
+
+page_how-we-work:
+  url:   /how-we-work
+  param: { module: page, action: howWeWork }
+
+page_about-us:
+  url:   /about-us
+  param: { module: page, action: aboutUs }
+
+page_contact:
+  url:   /contact
+  param: { module: page, action: contact }
 
 
 
 
-
-
-
-# default rules (my)
+### default rules (my)
 homepage:
   url:   /
-  param: { module: core, action: index }
+  param: { module: page, action: index }
 
 core_index:
   url:   /:module

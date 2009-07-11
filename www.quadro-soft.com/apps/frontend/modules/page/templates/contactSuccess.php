@@ -1,0 +1,56 @@
+<style type="text/css">
+#pageTitle {
+    background:#f2f2f2 url('/images/pic-what-we-do.jpg') no-repeat;
+}
+</style>
+
+<div id="pageTitle">
+    <h1 id="title" class="pngfix"><img src="images/ttl-contact.png" width="404" height="43" alt="Contact" title="" /></h1>
+</div>
+<div id="content">
+    <div id="mainContent">
+        <p>Tel: +3 8050 1234567</p>
+        <p>Email: <a href="mailto:info@quadro-soft.com">info@quadro-soft.com</a></p>
+        <hr />
+        
+        <?php /* ?>
+        <!-- After form sending BEGIN--> 
+        <p class="big green">Your Name,<br/> thank you for your message.</p>
+        <hr />
+        <!-- After form sending END -->
+        <?php */ ?>
+        
+        <a name="contactForm"></a>
+        <h2>Please send us your comments, suggestions or questions:</h2>
+        <form class="form" action="" id="messageForm" method="post">
+            <p>
+                <label for="contactName" class="required">Your name <span>(Required)</span></label>
+                <input class="text" id="contactName" name="contactName" size="30" type="text" />
+            </p>
+            <br class="clear" />
+            <p>
+                <label for="contactEmail" class="required">Email address <span>(Required)</span></label>
+                <input class="text" id="contactEmail" name="contactEmail" size="30" type="text" />
+            </p>
+            <br class="clear" />
+            <p>
+                <label for="contactCompany">Company</label>
+                <input class="text" id="contactCompany" name="contactCompany" size="30" type="text" />
+            </p>
+            <br class="clear" />
+            <p>
+                <label for="contactTelephone">Telephone</label>
+                <input class="text" id="contactTelephone" name="contactTelephone" size="30" type="text" />
+            </p>
+            <br class="clear" />
+            <p>
+                <label for="contactMessage" class="required">Your message <span>(Required)</span></label>
+                <textarea class="text" cols="40" id="contactMessage" name="contactMessage" rows="20"></textarea>
+            </p>
+            <br class="clear" />
+            <p>
+                <input alt="Send to Quadro Soft" class="submit image" id="buttonSend" name="buttonSend" type="submit" value="Send to Quadro Soft">
+            </p>
+        </form>
+    </div>
+</div>

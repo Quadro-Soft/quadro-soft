@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+#pageTitle {
+	height:294px;
+	background:#389bda url('/images/pic-home.jpg') no-repeat;
+}
+
+#slogan {
+	padding:126px 0 0 480px;
+}
+
+#columnR {
+	width:460px;
+	float:right;
+}
+
+#columnL {
+	width:432px;
+	float:left;
+}
+
+#latestWorks h3 {
+	font-size:1.0em;
+}
+
+#latestWorks .one-work {
+	width:47%;
+}
+
+#tools {
+	border:#e6e6e6 solid 1px;
+	border-bottom:none;
+	margin: 1.2em 0 0.95em;
+}
+
+#tools p {
+	margin:0;
+	padding:0;
+}
+
+#tools a {
+	display:block;
+	width:100%;
+	background:#f7f7f7;
+	border-bottom:#e6e6e6 solid 1px;
+	padding:25px 0;
+	/*padding:20px 70px 20px 100px;*/
+}
+
+#tools a#toolNet {
+	background:#f7f7f7 url('/images/tools-net.gif') 0 center no-repeat;
+}
+
+#tools a#toolJ2EE {
+	background:#f7f7f7 url('/images/tools-j2ee.gif') 0 center no-repeat;
+}
+
+#tools a#toolLAMP {
+	background:#f7f7f7 url('/images/tools-lamp.gif') 0 center no-repeat;
+}
+
+#tools a#toolDB {
+	background:#f7f7f7 url('/images/tools-db.gif') 0 center no-repeat;
+}
+
+/*
+#tools a#toolNet:hover {
+	background:#fcfcfc url('/images/tools-net.gif') center 430px  no-repeat;
+}
+*/
+
+#tools a:hover {
+	background-color:#fcfcfc !important;
+	background-position: -430px center !important;
+}
+
+
+
+#tools a,
+#tools a:link,
+#tools a:active,
+#tools a:visited,
+#tools a:hover {
+	text-decoration:none;
+	color:#2b2b2b !important;
+}
+
+#tools a strong {
+	color:#2b2b2b !important;
+	font-size:1.2em;
+	display:block;
+	margin: 0 70px 0 100px;
+}
+
+#tools a span {
+	color:#686868 !important;
+	display:block;
+	margin: 0 70px 0 100px;
+}
+

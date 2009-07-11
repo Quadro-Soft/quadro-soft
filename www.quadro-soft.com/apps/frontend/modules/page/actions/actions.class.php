@@ -15,8 +15,29 @@ class pageActions extends sfActions
   *
   * @param sfRequest $request A request object
   */
-  public function executeIndex(sfWebRequest $request)
-  {
-    $this->forward('default', 'module');
-  }
+    public function executeIndex(sfWebRequest $request)
+    {
+        
+    }
+    
+    public function executeWhatWeDo(sfWebRequest $request)
+    {
+        
+    }
+    
+    public function executeHowWeWork(sfWebRequest $request)
+    {
+        
+    }
+    
+    public function executeAboutUs(sfWebRequest $request)
+    {
+        
+    }
+    
+    public function executeContact(sfWebRequest $request)
+    {
+        
+    }
+    
 }

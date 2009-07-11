@@ -1,0 +1,23 @@
+
+indexSuccess:
+  stylesheets:    [index]
+
+
+
+all:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        'Quadro Soft - Software Development'
+    description:  'Ukrainian Web Development Team'
+    keywords:     'Software Development, ASP.NET, C#, Java'
+    language:     en
+    robots:       index, follow
+
+  stylesheets:    [-main, styles]
+
+  javascripts:    [png]
+
+  has_layout:     on
+  layout:         layoutPage
