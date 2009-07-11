@@ -1,0 +1,104 @@
+#
+# Credentials
+#
+Credential:
+  Credential_root:
+    id:           0
+    cid:          'root'
+    title:        'Super Admin'
+    description:  'Super Admin'
+  Credential_admin:
+    id:           1
+    cid:          'admin'
+    title:        'Administrator'
+    description:  'Administrator'
+  Credential_user:
+    id:           5
+    cid:          'user'
+    title:        'User'
+    description:  'User'
+  Credential_member:
+    id:           8
+    cid:          'member'
+    title:        'Member'
+    description:  'Member'
+  Credential_guest:
+    id:           99
+    cid:          'guest'
+    title:        'Guest'
+    description:  'Guest'
+
+#
+# Accounts
+#
+Account:
+  Account_andrey:
+    cid:          'andrey'
+    email:        'andrey@quadro-soft.com'
+    password:     'abc1234'
+    first_name:   'Denis'
+    last_name:    'Kotlyarov'
+    is_active:    1
+    is_deleted:   0
+  Account_ilchenko:
+    cid:          'ilchenko'
+    email:        'ilchenko@quadro-soft.com'
+    password:     'a1234'
+    first_name:   'Sergey'
+    last_name:    'Ilchenko'
+    is_active:    1
+    is_deleted:   0
+  Account_kaferi:
+    cid:          'kaferi'
+    email:        'kaferi@quadro-soft.com'
+    password:     'a1234'
+    first_name:   'Andrew'
+    last_name:    'Kaferi'
+    is_active:    1
+    is_deleted:   0
+  Account_kotlyarov:
+    cid:          'kotlyarov'
+    email:        'kotlyarov@quadro-soft.com'
+    password:     'a1234'
+    first_name:   'Andrey'
+    last_name:    'Kotlyarov'
+    is_active:    1
+    is_deleted:   0
+  Account_nekrasov:
+    cid:          'nekrasov'
+    email:        'nekrasov@quadro-soft.com'
+    password:     'a1234'
+    first_name:   'Andrey'
+    last_name:    'Nekrasov'
+    is_active:    1
+    is_deleted:   0
+  
+  
+  
+  
+
+
+#
+# Accounts 2 Credentials
+#
+Account2Credential:
+  Account2Credential_kotlyarov_root:
+    account_id:     Account_kotlyarov
+    credential_id:  Credential_root
+  Account2Credential_kotlyarov_member:
+    account_id:     Account_kotlyarov
+    credential_id:  Credential_member
+  Account2Credential_ilchenko_user:
+    account_id:     Account_ilchenko
+    credential_id:  Credential_user
+  Account2Credential_nekrasov_user:
+    account_id:     Account_nekrasov
+    credential_id:  Credential_user
+  Account2Credential_kaferi_member:
+    account_id:     Account_kaferi
+    credential_id:  Credential_member
+  Account2Credential_andrey_guest:
+    account_id:     Account_andrey
+    credential_id:  Credential_guest
+
+
