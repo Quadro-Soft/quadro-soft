@@ -1,0 +1,40 @@
+#! /bin/sh
+
+DBNAME="quadrosoft"
+DBUSER="quser"
+DBPASS="hArt2krtYB"
+
+echo "#############################################################"
+echo "#                                                           #"
+echo "#                                                           #"
+echo "#                   Install project script                  #"
+echo "#                     version: beta 1.1                     #"
+echo "#                                                           #"
+echo "#                Powered by Andrey Kotlyarov                #"
+echo "#                                                           #"
+echo "#                                                           #"
+echo "#############################################################"
+echo "#"
+
+echo "# Create database: $DBNAME"
+echo "# Username: $DBUSER"
+echo "# Password: $DBPASS"
+echo "#"
+mysql -u$DBUSER -p$DBPASS -e "DROP SCHEMA IF EXISTS $DBNAME;"
+mysql -u$DBUSER -p$DBPASS -e "CREATE SCHEMA $DBNAME DEFAULT CHARACTER SET utf8;"
+
+echo "# Delete old sql files"
+echo "#"
+rm -f .\data\sql\*.sql
+rm -f .\data\sql\sqldb.map
+
+./symfony cache:clear
+
+./symfony propel:build-model
+./symfony propel:build-forms
+./symfony propel:build-filters
+./symfony propel:build-sql
+./symfony propel:insert-sql
+./symfony propel:data-load
+
+./symfony cache:clear
