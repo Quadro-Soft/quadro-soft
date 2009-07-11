@@ -28,8 +28,9 @@ all:
   routing:
     class: sfPatternRouting
     param:
-      generate_shortest_url:            true
-      extra_parameters_as_query_string: true
+      generate_shortest_url:             true
+      extra_parameters_as_query_string:  true
+      suffix:                            '.html'
   
   
   
@@ -49,10 +50,7 @@ all:
     class: myUser
     param:
       timeout:                   1800
-
-  routing:
-    param:
-      suffix:                    '.html'
+  
   
 #all:
 #  controller:

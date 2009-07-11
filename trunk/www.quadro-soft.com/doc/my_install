@@ -18,7 +18,8 @@ php lib/vendor/symfony/data/bin/symfony generate:project quadrosoft
 ./symfony generate:app --escaping-strategy=on --csrf-secret=UniqueSecret frontend
 ./symfony generate:app --escaping-strategy=on --csrf-secret=UniqueSecret backend
 
-
+./symfony generate:module frontend core
+./symfony generate:module frontend page
 
 --- MYSQL ---
 GRANT ALL ON quadrosoft.* TO 'quser' IDENTIFIED BY 'hArt2krtYB' WITH GRANT OPTION;
