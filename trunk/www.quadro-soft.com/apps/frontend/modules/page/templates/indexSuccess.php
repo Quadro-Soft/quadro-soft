@@ -9,8 +9,9 @@
         <br />
         <!--  -->
         <div class="inc-top-margin"><a href="<?php echo url_for('@page_contact'); ?>"><img src="/images/btn-contact-us.gif" width="202" height="67" border="0" alt="Contact Us" title=""  /></a></div>
-        <!-- -- >
-        <!-- 
+        <!-- -->
+        
+        <?php /* ?>
         <div id="latestWorks">
             <h2 class="unrlined-with-link">Latest Works<a class="gray" href="our-work.html">All Works</a></h2>
             <div class="one-work fltl">
@@ -22,7 +23,8 @@
                 <span class="small">Nunc justo justo, tincidunt eget convallis ut, fringilla non urna. Nam in purus eros. Quisque velit felis.</span>
             </div>
         </div>
-        -->
+        <?php */ ?>
+        
     </div>
     <div id="columnL">
         <h2>Technologies we are working with</h2>

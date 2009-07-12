@@ -16,31 +16,31 @@ Page:
     pos:              1
     is_active:        1
     title:            'What we do'
-    meta_keywords:    'KKK, KKK2'
-    meta_description: 'DDD'
+    meta_keywords:    'What we do'
+    meta_description: 'What we do'
   Page_how-we-work: 
     uri:              '@page_how-we-work'
     parent_id:        Page_homepage
     pos:              2
     is_active:        1
     title:            'How we work'
-    meta_keywords:    'KKK3, KKK4'
-    meta_description: 'DDD2'
+    meta_keywords:    'How we work'
+    meta_description: 'How we work'
   Page_about-us: 
     uri:              '@page_about-us'
     parent_id:        Page_homepage
     pos:              3
     is_active:        1
     title:            'About us'
-    meta_keywords:    'KKK5, KKK6'
-    meta_description: 'DDD3'
+    meta_keywords:    'About us'
+    meta_description: 'About us'
   Page_our-works: 
     uri:              '@page_our-works'
     parent_id:        Page_homepage
     pos:              4
     is_active:        0
     title:            'Our works'
-    meta_keywords:    'KKK7, KKK8'
+    meta_keywords:    'Our works'
     meta_description: 'DDD4'
   Page_contact: 
     uri:              '@page_contact'
@@ -48,6 +48,6 @@ Page:
     pos:              5
     is_active:        1
     title:            'Contact'
-    meta_keywords:    'KKK9, KKK10'
+    meta_keywords:    'Our works'
     meta_description: 'DDD5'
  
