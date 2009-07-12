@@ -40,7 +40,7 @@
     <h1 id="title" class="pngfix"><img src="images/ttl-what-we-do.png" width="404" height="43" alt="What we do" title="" /></h1>
 </div>
 <div id="content">
-    <div class="fltr"><a href="contact.html"><img src="images/btn-contact-us.gif" width="202" height="67" border="0" alt="Contact Us" title=""  /></a></div>
+    <div class="fltr"><a href="<?php echo url_for('@page_contact'); ?>"><img src="/images/btn-contact-us.gif" width="202" height="67" border="0" alt="Contact Us" title=""  /></a></div>
     <div id="mainContent">
         <p class="big">Our key professional programmers in different fields of development plan the work in the way when the ratio “expenditures/quality” to your solution development will be the highest one.</p>
         <p>We expertise and examine technical tasks taking into consideration our more than 8+ years experience in software development which guarantee you will be on top of the project development progress having a detailed plan with delivery terms of each task or stage (sprint).</p>
@@ -94,7 +94,7 @@
             </ul>
         </div>
         
-        <p><a href="contact.html#contactForm">We’d love to discuss any projects you have in mind</a></p>
+        <p><a href="<?php echo url_for('@page_contact#contactForm'); ?>">We’d love to discuss any projects you have in mind</a></p>
         
         
     </div>

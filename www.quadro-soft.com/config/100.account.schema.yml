@@ -5,18 +5,18 @@ propel:
     package: lib.model.auth
   
   
-  session_front:
-    _attributes:
+  session_front: 
+    _attributes: 
       phpName: SessionFront
-    sess_coo:
+    sess_coo: 
       type: CHAR
       size: 32
       required: true
       primaryKey: true
-    sess_data:
+    sess_data: 
       type: LONGVARCHAR
       required: true
-    sess_time:
+    sess_time: 
       #type: bu_date OR bu_timestamp
       type: INTEGER
       size: 11
@@ -28,18 +28,18 @@ propel:
 #      default: 1440
   
   
-  session_back:
-    _attributes:
+  session_back: 
+    _attributes: 
       phpName: SessionBack
-    sess_coo:
+    sess_coo: 
       type: CHAR
       size: 32
       required: true
       primaryKey: true
-    sess_data:
+    sess_data: 
       type: LONGVARCHAR
       required: true
-    sess_time:
+    sess_time: 
       #type: bu_date OR bu_timestamp
       type: INTEGER
       size: 11
@@ -51,11 +51,11 @@ propel:
 #      default: 1440
   
   
-  account:
+  account: 
     _attributes: 
       phpName: Account
       idMethod: native
-    id:
+    id: 
       type: INTEGER
       required: true
       autoIncrement: true
@@ -65,30 +65,30 @@ propel:
       size: 64
       required: true
       index: unique
-    email:
+    email: 
       type: VARCHAR
       size: 64
       required: true
       index: unique
-    password:
+    password: 
       type: VARCHAR
       size: 64
       required: true
-    first_name:
+    first_name: 
       type: VARCHAR
       size: 64
-    last_name:
+    last_name: 
       type: VARCHAR
       size: 64
-    coo_remember:
+    coo_remember: 
       type: VARCHAR
       size: 32
-    is_active:
+    is_active: 
       type: TINYINT
       size: 1
       required: true
       default: 0
-    is_deleted:
+    is_deleted: 
       type: TINYINT
       size: 1
       required: true
@@ -101,10 +101,10 @@ propel:
       type: TIMESTAMP
   
   
-  credential:
+  credential: 
     _attributes: 
       phpName: Credential
-    id:
+    id: 
       type: INTEGER
       required: true
       primaryKey: true
@@ -116,14 +116,14 @@ propel:
     title: 
       type: VARCHAR
       size: 64
-    description:
+    description: 
       type: LONGVARCHAR
   
   
-  account2credential:
+  account2credential: 
     _attributes: 
       phpName: Account2Credential
-    account_id:
+    account_id: 
       type: INTEGER
       foreignTable: account
       foreignReference: id
@@ -131,7 +131,7 @@ propel:
       onUpdate: CASCADE
       required: true
       primaryKey: true
-    credential_id:
+    credential_id: 
       type: INTEGER
       foreignTable: credential
       foreignReference: id

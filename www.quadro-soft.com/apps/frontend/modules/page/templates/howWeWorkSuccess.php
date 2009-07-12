@@ -8,7 +8,7 @@
     <h1 id="title" class="pngfix"><img src="images/ttl-how-we-work.png" width="404" height="43" alt="How we work" title="" /></h1>
 </div>
 <div id="content">
-    <div class="fltr"><a href="contact.html"><img src="images/btn-contact-us.gif" width="202" height="67" border="0" alt="Contact Us" title=""  /></a></div>
+    <div class="fltr"><a href="<?php echo url_for('@page_contact'); ?>"><img src="/images/btn-contact-us.gif" width="202" height="67" border="0" alt="Contact Us" title=""  /></a></div>
     <div id="mainContent">
         <p>A software development process is rather complex concept which has a lot of shades and which requires rather special knowledge. This procedure consists of several stand alone steps which are almost the same in different software development concepts. We use the following:
         <ol>
