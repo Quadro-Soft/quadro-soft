@@ -32,7 +32,7 @@
 
 <?php include_partial('page/title', array('content' => $titleContent)); ?>
 <div id="content">
-    <?php include_partial('page/contactButton'); ?>
+    <div class="fltr"><?php include_partial('page/contactButton'); ?></div>
     <div id="mainContent">
         <p class="big">Our key professional programmers in different fields of development plan the work in the way when the ratio “expenditures/quality” to your solution development will be the highest one.</p>
         <p>We expertise and examine technical tasks taking into consideration our more than 8+ years experience in software development which guarantee you will be on top of the project development progress having a detailed plan with delivery terms of each task or stage (sprint).</p>
