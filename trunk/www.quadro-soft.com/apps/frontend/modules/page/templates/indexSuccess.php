@@ -1,5 +1,5 @@
 <div id="pageTitle">
-    <div id="slogan" class="pngfix"><img src="images/ttl-home.png" width="367" height="110" alt="" /></div>
+    <div id="slogan" class="pngfix"><img src="/images/ttl-home.png" width="367" height="110" alt="" /></div>
 </div>
 <div id="content">
     <div id="columnR">

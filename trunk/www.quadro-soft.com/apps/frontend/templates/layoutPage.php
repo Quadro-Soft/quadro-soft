@@ -6,7 +6,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <?php include_http_metas() ?>
         <?php include_metas() ?>
         <?php include_title() ?>
@@ -20,7 +19,7 @@
                 <br class="clear" />
                 <div id="pageMenu">
                     
-                    <?php include_component('core', 'menu'); ?>
+                    <?php include_component('page', 'menu'); ?>
                     
                 </div>
             </div>
@@ -31,10 +30,3 @@
         </div>
     </body>
 </html>
-    
-    <?php /*?>
-    <?php $routing = sfContext::getInstance()->getRouting(); ?>
-    <h1><?php echo $routing->getCurrentInternalUri(); ?></h1>
-    <h1><?php echo $routing->getCurrentInternalUri(true); ?></h1>
-    <h1><?php echo $routing->getCurrentRouteName(); ?></h1>
-    <?pph */ ?>

@@ -1,0 +1,84 @@
+propel: 
+  _attributes: 
+    defaultIdMethod: none
+    noXsd: false
+    package: lib.model.page
+  
+  
+  page: 
+    _attributes: 
+      phpName: Page
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    parent_id: 
+      type: INTEGER
+      foreignTable: page
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+      required: false
+    pos: 
+      type: INTEGER
+      required: true
+      default: 0
+    is_active: 
+      type: TINYINT
+      size: 1
+      required: true
+      default: 1
+    uri: 
+      type: VARCHAR
+      size: 64
+      required: true
+      index: unique
+    title: 
+      type: VARCHAR
+      size: 64
+    meta_keywords: 
+      type: LONGVARCHAR
+    meta_description: 
+      type: LONGVARCHAR
+    created_at: 
+    updated_at: 
+  
+  
+  
+  contact_request: 
+    _attributes: 
+      phpName: ContactRequest
+      idMethod: native
+    id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    sess_coo: 
+      type: CHAR
+      size: 32
+      foreignTable: session_front
+      foreignReference: sess_coo
+      onDelete: SET NULL
+      onUpdate: CASCADE
+      required: false
+    name: 
+      type: VARCHAR
+      size: 64
+    email: 
+      type: VARCHAR
+      size: 64
+    company: 
+      type: VARCHAR
+      size: 64
+    phone: 
+      type: VARCHAR
+      size: 64
+    message: 
+      type: LONGVARCHAR
+    created_at:
+  
+  
+  

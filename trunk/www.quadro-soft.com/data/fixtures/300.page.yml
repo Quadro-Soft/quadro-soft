@@ -1,0 +1,53 @@
+#
+# Pages
+#
+Page: 
+  Page_homepage: 
+    uri:              '@homepage'
+    parent_id:        null
+    pos:              1
+    is_active:        1
+    title:            'Quadro Soft - Software Development'
+    meta_keywords:    'Software Development, ASP.NET, C#, Java'
+    meta_description: 'Ukrainian Web Development Team'
+  Page_what-we-do: 
+    uri:              '@page_what-we-do'
+    parent_id:        Page_homepage
+    pos:              1
+    is_active:        1
+    title:            'What we do'
+    meta_keywords:    'KKK, KKK2'
+    meta_description: 'DDD'
+  Page_how-we-work: 
+    uri:              '@page_how-we-work'
+    parent_id:        Page_homepage
+    pos:              2
+    is_active:        1
+    title:            'How we work'
+    meta_keywords:    'KKK3, KKK4'
+    meta_description: 'DDD2'
+  Page_about-us: 
+    uri:              '@page_about-us'
+    parent_id:        Page_homepage
+    pos:              3
+    is_active:        1
+    title:            'About us'
+    meta_keywords:    'KKK5, KKK6'
+    meta_description: 'DDD3'
+  Page_our-works: 
+    uri:              '@page_our-works'
+    parent_id:        Page_homepage
+    pos:              4
+    is_active:        0
+    title:            'Our works'
+    meta_keywords:    'KKK7, KKK8'
+    meta_description: 'DDD4'
+  Page_contact: 
+    uri:              '@page_contact'
+    parent_id:        Page_homepage
+    pos:              5
+    is_active:        1
+    title:            'Contact'
+    meta_keywords:    'KKK9, KKK10'
+    meta_description: 'DDD5'
+ 

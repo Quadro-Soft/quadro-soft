@@ -1,14 +1,7 @@
-<style type="text/css">
-#pageTitle {
-    background:#f2f2f2 url('/images/pic-what-we-do.jpg') no-repeat;
-}
-</style>
+<?php include_partial('page/title', array('content' => $titleContent)); ?>
 
-<div id="pageTitle">
-    <h1 id="title" class="pngfix"><img src="/images/ttl-about-us.png" width="404" height="43" alt="About Us" title="" /></h1>
-</div>
 <div id="content">
-    <div class="fltr"><a href="<?php echo url_for('@page_contact'); ?>"><img src="/images/btn-contact-us.gif" width="202" height="67" border="0" alt="Contact Us" title=""  /></a></div>
+    <?php include_partial('page/contactButton'); ?>
     <div id="mainContent">
         <p>We are a small but professional team of developers who were working hard apart of each other on outsourcing/offshore market since 2000. During that period of time, a lot of projects were successfully completed by each of us both individually and as a part of the team. At last, a common project has consolidated us in one company. </p>
         <p>Quadro Soft is a IT outsourcing/offshore software Ukrainian company which was founded as separate independent business unit in early 2008.  It was established to serve clients from different countries all over the world including USA, Canada, United Kingdom, Germany, France, Ireland, Russian Federation and others on outsourcing and cutting costs basics.</p> 

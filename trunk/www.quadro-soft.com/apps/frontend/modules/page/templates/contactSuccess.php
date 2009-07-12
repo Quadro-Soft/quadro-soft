@@ -1,12 +1,5 @@
-<style type="text/css">
-#pageTitle {
-    background:#f2f2f2 url('/images/pic-what-we-do.jpg') no-repeat;
-}
-</style>
+<?php include_partial('page/title', array('content' => $titleContent)); ?>
 
-<div id="pageTitle">
-    <h1 id="title" class="pngfix"><img src="/images/ttl-contact.png" width="404" height="43" alt="Contact" title="" /></h1>
-</div>
 <div id="content">
     <div id="mainContent">
         <p>Tel: +3 8050 1234567</p>

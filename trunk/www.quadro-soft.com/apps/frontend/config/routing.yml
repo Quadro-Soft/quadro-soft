@@ -1,9 +1,6 @@
 
 
 
-
-
-
 ### Page Rules
 page_home:
   url:   /index
@@ -20,6 +17,10 @@ page_how-we-work:
 page_about-us:
   url:   /about-us
   param: { module: page, action: aboutUs }
+
+page_our-works:
+  url:   /our-works
+  param: { module: page, action: ourWorks }
 
 page_contact:
   url:   /contact
