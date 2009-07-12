@@ -20,6 +20,12 @@ class pageActions extends sfActions
         
     }
     
+    public function executeError404(sfWebRequest $request)
+    {
+        //$this->redirect('page/index');
+        $this->redirect('@homepage');
+    }
+    
     public function executeWhatWeDo(sfWebRequest $request)
     {
         

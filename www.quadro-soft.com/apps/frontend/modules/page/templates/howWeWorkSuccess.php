@@ -1,7 +1,7 @@
 <?php include_partial('page/title', array('content' => $titleContent)); ?>
 
 <div id="content">
-    <?php include_partial('page/contactButton'); ?>
+    <div class="fltr"><?php include_partial('page/contactButton'); ?></div>
     <div id="mainContent">
         <p>A software development process is rather complex concept which has a lot of shades and which requires rather special knowledge. This procedure consists of several stand alone steps which are almost the same in different software development concepts. We use the following:
         <ol>
