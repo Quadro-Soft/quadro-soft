@@ -109,7 +109,7 @@ class pageActions extends sfActions
             {
                 // Request field
                 $this->isError = true;
-                $this->error = "Please fill all requred fields";
+                $this->error = "Please fill all required fields";
             }
             else
             {
