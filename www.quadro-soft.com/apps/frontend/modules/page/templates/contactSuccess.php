@@ -2,7 +2,7 @@
 
 <div id="content">
     <div id="mainContent">
-        <p>Tel: +3 8067 2791717</p>
+        <p>Tel: +38 067 2791717</p>
         <p>Email: <?php echo mail_to('info@quadro-soft.com', '', 'encode=true') ?></p>
         <hr />
         
