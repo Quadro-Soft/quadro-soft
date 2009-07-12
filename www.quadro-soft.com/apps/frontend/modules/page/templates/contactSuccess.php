@@ -2,8 +2,8 @@
 
 <div id="content">
     <div id="mainContent">
-        <p>Tel: +3 8050 1234567</p>
-        <p>Email: <a href="mailto:info@quadro-soft.com">info@quadro-soft.com</a></p>
+        <p>Tel: +3 8067 2791717</p>
+        <p>Email: <?php echo mail_to('info@quadro-soft.com', '', 'encode=true') ?></p>
         <hr />
         
         <?php if ($isError): ?>

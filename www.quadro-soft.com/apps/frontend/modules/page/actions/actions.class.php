@@ -176,8 +176,8 @@ class pageActions extends sfActions
         while ($page != null)
         {
             $metaT = $page->getTitle() . ($metaT == '' ? '' : ' / ') . $metaT;
-            $metaK = $metaK . ($metaK == '' ? '' : ', ') . $page->getMetaKeywords();
-            $metaD = $page->getMetaKeywords() . ($metaD == '' ? '' : ' '). $metaD;
+            $metaK = $page->getMetaKeywords() . ($metaK == '' ? '' : ', ') . $metaK;
+            $metaD = $page->getMetaDescription() . ($metaD == '' ? '' : ' '). $metaD;
             
             if ($page->getParentId() == null)
             {

@@ -11,6 +11,9 @@
         <?php include_title() ?>
         
         <link href="/images/favicon.ico" rel="Shortcut Icon" type="image/x-icon" />
+        
+        <?php include_partial('page/googleAnalystics'); ?>
+        
     </head>
     <body <?php echo ($isHomepage ? 'id="homepage"' : 'class="innerpage"'); ?>>
         <div id="container">
