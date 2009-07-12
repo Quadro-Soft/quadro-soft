@@ -110,7 +110,7 @@ class pageActions extends sfActions
                 
                 $contactRequest = ContactRequestPeer::doSelectOne($criteria);
                 
-                if ($contactRequest != null)
+                //if ($contactRequest != null)
                 {
                     $contact = new ContactRequest();
                     $contact->setSessCoo($sess_coo);
