@@ -5,10 +5,10 @@
     <div id="columnR">
         <h1>Software development</h1>
         <p class="big">Our company delivers IT products, services and solutions of different types and complexity levels on competitive prices and undertime terms starting from simple presentation your personality in the global network end ending with building, implementing and customizing CRM (Clients Resources Management) solutions in your organization. </p>
-        <p><a href="about-us.html">More about Quadro Soft</a></p>
+        <p><a href="<?php echo url_for('@page_about-us'); ?>">More about Quadro Soft</a></p>
         <br />
         <!--  -->
-        <div class="inc-top-margin"><a href="contact.html"><img src="images/btn-contact-us.gif" width="202" height="67" border="0" alt="Contact Us" title=""  /></a></div>
+        <div class="inc-top-margin"><a href="<?php echo url_for('@page_contact'); ?>"><img src="/images/btn-contact-us.gif" width="202" height="67" border="0" alt="Contact Us" title=""  /></a></div>
         <!-- -- >
         <!-- 
         <div id="latestWorks">
@@ -28,31 +28,31 @@
         <h2>Technologies we are working with</h2>
         <div id="tools">
             <p>
-            <a id="toolNet" href="what-we-do.html#NET">
+            <a id="toolNet" href="<?php echo url_for('@page_what-we-do#NET'); ?>">
                 <strong>.NET Platform Environment</strong>
                 <span class="small">Web applications, Client-Server Windows applications, Customizing ready to use solutions...</span>
             </a>
             </p>
             <p>
-            <a id="toolJ2EE" href="what-we-do.html#J2EE">
+            <a id="toolJ2EE" href="<?php echo url_for('@page_what-we-do#J2EE'); ?>">
                 <strong>J2EE Platform Environment</strong>
                 <span class="small">GWT, Java-applets; Apache Axis...</span>
             </a>
             </p>
             <p>
-            <a id="toolLAMP" href="what-we-do.html#LAMP">
+            <a id="toolLAMP" href="<?php echo url_for('@page_what-we-do#LAMP'); ?>">
                 <strong>LAMP Environment</strong>
                 <span class="small">Linux, Apache, mySQL, PHP...</span>
             </a>
             </p>
             <p>
-            <a id="toolDB" href="what-we-do.html#DB">
+            <a id="toolDB" href="<?php echo url_for('@page_what-we-do#DB'); ?>">
                 <strong>Database development</strong>
                 <span class="small">MS SQL Server database architecture, Stored Procedures, Triggers, mySQL...</span>
             </a>
             </p>
         </div>
-        <p><a href="what-we-do.html">More about what we do</a></p>
+        <p><a href="<?php echo url_for('@page_what-we-do'); ?>">More about what we do</a></p>
     </div>
     <br class="clear" />
 </div>

@@ -16,7 +16,7 @@
     <body <?php echo ($isHomepage ? 'id="homepage"' : 'class="innerpage"'); ?>>
         <div id="container">
             <div id="header">
-                <div id="logotype"><?php if(!$isHomepage): ?><a href="/"><?php endif; ?><img src="/images/logo.gif" width="189" height="50" border="0" alt="Quadro Soft logo" title="Homepage" /><?php if(!$isHomepage): ?></a><?php endif; ?></div>
+                <div id="logotype"><?php if(!$isHomepage): ?><a href="<?php echo url_for('@homepage'); ?>"><?php endif; ?><img src="/images/logo.gif" width="189" height="50" border="0" alt="Quadro Soft logo" title="Homepage" /><?php if(!$isHomepage): ?></a><?php endif; ?></div>
                 <br class="clear" />
                 <div id="pageMenu">
                     
