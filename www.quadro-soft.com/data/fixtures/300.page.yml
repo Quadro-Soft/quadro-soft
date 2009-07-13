@@ -41,13 +41,13 @@ Page:
     is_active:        0
     title:            'Our works'
     meta_keywords:    'Our works'
-    meta_description: 'DDD4'
+    meta_description: 'Our works'
   Page_contact: 
     uri:              '@page_contact'
     parent_id:        Page_homepage
     pos:              5
     is_active:        1
     title:            'Contact'
-    meta_keywords:    'Our works'
-    meta_description: 'DDD5'
+    meta_keywords:    'Contacts'
+    meta_description: 'Contact'
  
